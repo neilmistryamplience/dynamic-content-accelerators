@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/localised-slot.json",
-    "schemaId": "{CONTENT_TYPE_BASEPATH}/localised-slot.json",
-    "validationLevel": "SLOT"
-  }

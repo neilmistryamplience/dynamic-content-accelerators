@@ -1,9 +1,3 @@
 {{#if button.buttonLabel}}
-    <a
-    class="o-dc-button {{button.buttonStyle}} {{#if button.buttonFontWeight}}o-dc-text-{{button.buttonFontWeight}}{{/if}} {{button.buttonTransition}}{{#if button.buttonBackgroundColour}} inline-color {{/if}}"
-    style=" {{#if button.buttonBackgroundColour}}background:{{button.buttonBackgroundColour}};{{/if}}
-            {{#if button.buttonForegroundColour}}color:{{button.buttonForegroundColour}};{{/if}}
-            {{#if button.buttonBorderStyle}}border-style:{{button.buttonBorderStyle}};{{/if}}
-            {{#if button.buttonBorderColour}}border-color:{{button.buttonBorderColour}};{{/if}}">
-    {{button.buttonLabel}}</a>
+    <div class="o-dc-button {{button.buttonStyle}} {{#if button.buttonFontWeight}}o-dc-text-{{button.buttonFontWeight}}{{/if}} {{button.buttonTransition}}{{#if button.buttonBackgroundColour}} inline-color {{/if}}" style="{{#if button.buttonBackgroundColour}}background:{{button.buttonBackgroundColour}};{{/if}}{{#if button.buttonForegroundColour}}color:{{button.buttonForegroundColour}};{{/if}}{{#if button.buttonBorderStyle}}border-style:{{button.buttonBorderStyle}};{{/if}}{{#if button.buttonBorderColour}}border-color:{{button.buttonBorderColour}};{{/if}}">{{button.buttonLabel}}</div>
 {{/if}}

@@ -29,8 +29,8 @@
                   "{CONTENT_TYPE_BASEPATH}/video.json",
                   "{CONTENT_TYPE_BASEPATH}/text.json",
                   "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
-                  "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
-                  "{CONTENT_TYPE_BASEPATH}/advanced-banner.json"
+                  "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
+                  "{CONTENT_TYPE_BASEPATH}/title.json"
                 ]
               }
             }

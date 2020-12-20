@@ -10,14 +10,6 @@
 {{> amp-template-video }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/promo-list.json")) ~}}
-{{> amp-template-promo-list }}
-{{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/promo.json")) ~}}
-{{> amp-template-promo }}
-{{~/if}}
-
 {{#if (test this.[@type] (toRegex ".*/split-block.json")) ~}}
 {{> amp-template-split-block }}
 {{~/if}}
@@ -46,14 +38,6 @@
 {{> amp-template-card }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/blog-post.json")) ~}}
-{{> amp-template-blog-post }}
-{{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/blog-list.json")) ~}}
-{{> amp-template-blog-list }}
-{{~/if}}
-
 {{#if (test this.[@type] (toRegex ".*/banner.json")) ~}}
 {{> amp-template-banner }}
 {{~/if}}
@@ -66,16 +50,8 @@
 {{> amp-template-advanced-banner }}
 {{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/countdown-banner.json")) ~}}
-{{> amp-template-countdown-banner }}
-{{~/if}}
-
 {{#if (test this.[@type] (toRegex ".*/curated-product-list.json")) ~}}
 {{> amp-template-curated-product-list }}
-{{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/simple-image-banner-localised.json")) ~}}
-{{> amp-template-simple-image-banner-localised }}
 {{~/if}}
 {{#if (test this.[@type] (toRegex ".*/simple-image-banner.json")) ~}}
 {{> amp-template-simple-image-banner }}
@@ -91,28 +67,13 @@
 
 {{#if (test this.[@type] (toRegex ".*/collection.json")) ~}} {{> amp-template-collection }} {{~/if}}
 {{#if (test this.[@type] (toRegex ".*/collection-block.json")) ~}} {{> amp-template-collection-block }} {{~/if}}
-
-
 {{#if (test this.[@type] (toRegex ".*/slot.json")) ~}}
     {{#each this.content}}
         {{> amp-template-templateChooser this }}
     {{/each}}
 {{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/localised-slot.json")) ~}}
-    {{#each this.content}}
-        {{> amp-template-templateChooser this }}
-    {{/each}}
-{{~/if}}
-
 {{#if (test this.[@type] (toRegex ".*/navigation-slot.json")) ~}}
     {{> amp-template-templateChooser navigation }}
 {{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/email-banner")) ~}} {{> banner }} {{~/if}}
-{{#if (test this.[@type] (toRegex ".*/two-column")) ~}} {{> two-column }} {{~/if}}
-{{#if (test this.[@type] (toRegex ".*/email-page")) ~}} {{> page-template }} {{~/if}}
-
 {{#if (test this.[@type] (toRegex ".*/map.json")) ~}} {{> amp-template-map }} {{~/if}}
-{{#if (test this.[@type] (toRegex ".*/map-search.json")) ~}} {{> amp-template-map-search }} {{~/if}}
 {{#if (test this.[@type] (toRegex ".*/form.json")) ~}} {{> amp-template-form }} {{~/if}}

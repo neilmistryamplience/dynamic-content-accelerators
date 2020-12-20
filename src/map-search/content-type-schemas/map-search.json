@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/map-search.json",
-    "schemaId": "{CONTENT_TYPE_BASEPATH}/map-search.json",
-    "validationLevel": "CONTENT_TYPE"
-  }

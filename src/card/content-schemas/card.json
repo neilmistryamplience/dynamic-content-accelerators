@@ -25,22 +25,32 @@
       "title": "Card image"
     },
     "cardName": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 150,
-      "title": "Card name"
-    },
-    "description": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 200,
-      "title": "Description"
-    },
-    "link": {
+      "title":"Card name",
+      "description": "The Card Name",
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/link"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+        }
+      ]
+    },
+    "description": {
+      "title":"Description",
+      "description": "The Card Description",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+        }
+      ]
+    },
+    "button": {
+      "title": "Button",
+      "description": "Add a button",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
         }
       ]
     }

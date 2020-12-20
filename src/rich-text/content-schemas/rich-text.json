@@ -26,9 +26,7 @@
                 "{CONTENT_TYPE_BASEPATH}/image.json",
                 "{CONTENT_TYPE_BASEPATH}/banner.json",
                 "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
-                "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
                 "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
-                "{CONTENT_TYPE_BASEPATH}/blog-list.json",
                 "{CONTENT_TYPE_BASEPATH}/title.json",
                 "{CONTENT_TYPE_BASEPATH}/collection-block.json",
                 "{CONTENT_TYPE_BASEPATH}/collection.json",
@@ -45,7 +43,7 @@
               ],
               "contentTypeSettings": {
                 "cards": {
-                  "*": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-cardsPreview&locale={{locales}},en-*,*"
+                  "*": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-visualization&locale=en-*,*"
                 }
               }
             }

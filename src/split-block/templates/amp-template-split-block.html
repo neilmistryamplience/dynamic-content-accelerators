@@ -9,6 +9,9 @@
             {{#if (test this.[@type] (toRegex ".*/video")) ~}}
             {{> amp-template-video }}
             {{~/if}}
+            {{#if (test this.[@type] (toRegex ".*/title")) ~}}
+            {{> amp-template-title }}
+            {{~/if}}
 
             {{#if (test this.[@type] (toRegex ".*/image")) ~}}
             <div class="amp-dc-poi-image">

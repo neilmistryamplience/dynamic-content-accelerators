@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/countdown-banner.json",
-    "schemaId": "{CONTENT_TYPE_BASEPATH}/countdown-banner.json",
-    "validationLevel": "CONTENT_TYPE"
-  }

@@ -1,5 +1,0 @@
-{
-  "body": "../content-schemas/simple-image.json",
-  "schemaId": "{CONTENT_TYPE_BASEPATH}/simple-image.json",
-  "validationLevel": "CONTENT_TYPE"
-}

@@ -1,5 +1,0 @@
-{
-  "body": "../content-schemas/simple-image-banner-localised.json",
-  "schemaId": "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
-  "validationLevel": "CONTENT_TYPE"
-}

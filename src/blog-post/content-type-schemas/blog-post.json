@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/blog-post.json",
-    "schemaId": "{CONTENT_TYPE_BASEPATH}/blog-post.json",
-    "validationLevel": "CONTENT_TYPE"
-  }

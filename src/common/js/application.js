@@ -19,7 +19,7 @@
     if (sDefault) return sDefault;
   };
 
-  var vse = getUrlParameter('vse', 'specializeddemo.cdn.content.amplience.net');
+  var vse = getUrlParameter('vse', 'specialized-demo.cdn.content.amplience.net');
   var crsvse = getUrlParameter('vse', 'c1-orig.adis.ws');
   // Removed as we will get this from the DIV attributes
   /*

@@ -131,8 +131,7 @@
           "minLength": 0,
           "maxLength": 2000,
           "title": "Value",
-          "pattern": "^(http://www.|https://www.|http://|https://)?[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(:[0-9]{1,5})?(/.*)?$",
-          "description": "Enter an absolute URL"
+          "description": "Enter an your link"
         }
       }
     },
