@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/video-yuca.json",
-    "schemaId": "{CONTENT_TYPE_BASEPATH}/video-yuca.json",
-    "validationLevel": "CONTENT_TYPE"
-  }

@@ -24,34 +24,7 @@
           {
             "properties": {
               "contentType": {
-                "enum": [
-                  "{CONTENT_TYPE_BASEPATH}/image.json",
-                  "{CONTENT_TYPE_BASEPATH}/banner.json",
-                  "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
-                  "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
-                  "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
-                  "{CONTENT_TYPE_BASEPATH}/advanced-banner-localised.json",
-                  "{CONTENT_TYPE_BASEPATH}/collection-block.json",
-                  "{CONTENT_TYPE_BASEPATH}/collection.json",
-                  "{CONTENT_TYPE_BASEPATH}/blog-list.json",
-                  "{CONTENT_TYPE_BASEPATH}/card.json",
-                  "{CONTENT_TYPE_BASEPATH}/card-list.json",
-                  "{CONTENT_TYPE_BASEPATH}/curated-product-list.json",
-                  "{CONTENT_TYPE_BASEPATH}/external-block.json",
-                  "{CONTENT_TYPE_BASEPATH}/slider.json",
-                  "{CONTENT_TYPE_BASEPATH}/split-block.json",
-                  "{CONTENT_TYPE_BASEPATH}/text.json",
-                  "{CONTENT_TYPE_BASEPATH}/title.json",
-                  "{CONTENT_TYPE_BASEPATH}/rich-text.json",
-                  "{CONTENT_TYPE_BASEPATH}/video.json",
-                  "{CONTENT_TYPE_BASEPATH}/form.json",
-                  "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
-                  "{CONTENT_TYPE_BASEPATH}/navigation.json",
-                  "{CONTENT_TYPE_BASEPATH}/map.json",
-                  "{CONTENT_TYPE_BASEPATH}/map-search.json",
-                  "https://www.amplience.com/examples/productlist.json",
-                  "{CONTENT_TYPE_BASEPATH}/video-yuca.json"
-                ]
+                "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/anyComponent"
               }
             }
           }

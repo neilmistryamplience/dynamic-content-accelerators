@@ -2,8 +2,8 @@
     <table width="100%" max-width="600px" cellspacing="0" cellpadding="0">
         <tbody>
             <tr>
-                {{#with image}}
-                <td max-width="600px" height="400px" style="background-image: url('//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}.jpg?$poi$&w=600&aspect=6:4'); background-repeat: no-repeat; background-size: cover; height:400px">
+                {{#with bannerImage}}
+                <td max-width="600px" height="400px" style="background-image: url('//{{imageholder.image.image.defaultHost}}/i/{{imageholder.image.image.endpoint}}/{{encodeURI imageholder.image.image.name}}.jpg?$poi$&w=600&aspect=6:4'); background-repeat: no-repeat; background-size: cover; height:400px">
                 </td>
                 {{/with}}
             </tr>

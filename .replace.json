@@ -34,5 +34,7 @@
     "italiancontent",
     "spanishcontent"
   ],
-  "SLOT_REPOSITORIES":["slots"]
+  "SLOT_REPOSITORIES":["slots"],
+  "SFCC_DOMAIN":"zzfr-002.sandbox.us01.dx.commercecloud",
+  "SFCC_SITE": "RefArchGlobal"
 }

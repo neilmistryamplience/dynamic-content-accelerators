@@ -61,24 +61,7 @@
 											{
 												"properties": {
 													"contentType": {
-														"title": "Slot Content",
-														"enum": [
-															"https://www.amplience.com/examples/banner.json",
-															"https://www.amplience.com/examples/slider.json",
-															"https://www.amplience.com/examples/promolist.json",
-															"https://www.amplience.com/examples/video.json",
-															"https://www.amplience.com/examples/text.json",
-															"https://www.amplience.com/examples/externalblock.json",
-															"https://www.amplience.com/examples/splitblock.json",
-															"https://www.amplience.com/examples/cardlist.json",
-															"https://www.amplience.com/examples/image.json",
-															"https://www.amplience.com/examples/container.json",
-															"https://www.amplience.com/examples/productlist.json",
-															"https://www.amplience.com/examples/blogPost.json",
-															"https://unpkg.com/dc-accelerators-content-rendering-service/dist/contentTypes/banner.json",
-															"https://unpkg.com/dc-accelerators-content-rendering-service/dist/contentTypes/image.json",
-															"https://unpkg.com/dc-accelerators-content-rendering-service/dist/contentTypes/video.json"
-														]
+														"$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/anyComponent"
 													}
 												}
 											}

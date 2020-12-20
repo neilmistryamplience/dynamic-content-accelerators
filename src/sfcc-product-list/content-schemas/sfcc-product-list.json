@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "{CONTENT_TYPE_BASEPATH}/sfcc-product-list.json",
+  "title": "SFCC Product List (CC)",
+  "description": "A SFCC Product List",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "component": {
+      "type": "string",
+      "const": "CuratedProductList"
+    },
+    "header": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 50,
+      "title": "Header",
+      "description": "Header for this product list"
+    },
+    "products": {
+      "title": "Product Selector",
+      "description": "List of products to display",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "type": "string"
+      },
+      "ui:extension": {
+        "name": "product-selector-commerce-tools"
+      }
+    }
+  },
+  "propertyOrder": ["header", "products", "component"]
+}

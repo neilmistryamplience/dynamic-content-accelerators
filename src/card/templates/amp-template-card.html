@@ -18,12 +18,12 @@
             {{/unless}}
         {{/unless}}">
 
-            {{#if cardName}}
-            <div class="amp-dc-card-name">{{cardName}}</div>
-            {{/if}}
-            {{#if description}}
-            <p class="amp-dc-card-description">{{description}}</p>
-            {{/if}}
+        {{#with cardName}}
+        {{> amp-template-advanced-textline this tag='h1' class='headline1'}}
+    {{/with}}
+    {{#with description}}
+        {{> amp-template-advanced-textline this tag='p' class='copy'}}
+    {{/with}}
             {{#if link}}
             <div class="amp-dc-card-link">
                 {{#if link.label}}

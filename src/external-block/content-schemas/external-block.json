@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "{CONTENT_TYPE_BASEPATH}/external-block.json",
-  "title": "External Block",
+  "title": "External Block (CC)",
   "description": "External block accelerator",
   "allOf": [
     {

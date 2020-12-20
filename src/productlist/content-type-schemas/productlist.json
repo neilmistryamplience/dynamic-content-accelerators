@@ -1,5 +1,0 @@
-{
-    "body": "../content-schemas/productlist.json",
-    "schemaId": "https://www.amplience.com/examples/productlist.json",
-    "validationLevel": "CONTENT_TYPE"
-  }

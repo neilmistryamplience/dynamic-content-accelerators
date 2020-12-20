@@ -31,8 +31,8 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 2000,
-      "title": "Add YouTube URL?",
-      "description": "Enter YouTube URL"
+      "title": "Add YouTube Video?",
+      "description": "Enter YouTube Video ID"
     },
     "backgroundFullScreen": {
       "title": "Background video (auto play and loop)?",

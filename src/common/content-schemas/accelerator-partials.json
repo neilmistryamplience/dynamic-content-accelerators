@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json",
-  "title": "Accelerator partials",
+  "title": "Accelerator partials (CC)",
   "description": "Partials",
   "allOf": [
     {
@@ -10,9 +10,9 @@
   ],
   "type": "object",
   "definitions": {
-    "advancedText":{
+    "advancedText": {
       "type": "object",
-      "properties":{
+      "properties": {
         "text": {
           "type": "string",
           "minLength": 0,
@@ -45,12 +45,12 @@
         }
       }
     },
-    "advancedTextLocalised":{
+    "advancedTextLocalised": {
       "type": "object",
-      "properties":{
+      "properties": {
         "text": {
           "title": "Text",
-          "description": "Add  text",
+          "description": "Add text",
           "allOf": [
             {
               "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string"
@@ -172,6 +172,35 @@
           ]
         }
       }
+    },
+    "anyComponent": {
+      "enum": [
+        "{CONTENT_TYPE_BASEPATH}/advanced-banner-localised.json",
+        "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
+        "{CONTENT_TYPE_BASEPATH}/banner.json",
+        "{CONTENT_TYPE_BASEPATH}/blog-list.json",
+        "{CONTENT_TYPE_BASEPATH}/card-list.json",
+        "{CONTENT_TYPE_BASEPATH}/card.json",
+        "{CONTENT_TYPE_BASEPATH}/collection-block.json",
+        "{CONTENT_TYPE_BASEPATH}/collection.json",
+        "{CONTENT_TYPE_BASEPATH}/external-block.json",
+        "{CONTENT_TYPE_BASEPATH}/form.json",
+        "{CONTENT_TYPE_BASEPATH}/image.json",
+        "{CONTENT_TYPE_BASEPATH}/map-search.json",
+        "{CONTENT_TYPE_BASEPATH}/map.json",
+        "{CONTENT_TYPE_BASEPATH}/navigation.json",
+        "{CONTENT_TYPE_BASEPATH}/productlist.json",
+        "{CONTENT_TYPE_BASEPATH}/rich-text.json",
+        "{CONTENT_TYPE_BASEPATH}/sfcc-curated-products.json",
+        "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
+        "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
+        "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
+        "{CONTENT_TYPE_BASEPATH}/slider.json",
+        "{CONTENT_TYPE_BASEPATH}/split-block.json",
+        "{CONTENT_TYPE_BASEPATH}/text.json",
+        "{CONTENT_TYPE_BASEPATH}/title.json",
+        "{CONTENT_TYPE_BASEPATH}/video.json"
+      ]
     }
   }
 }

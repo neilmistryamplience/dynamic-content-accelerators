@@ -297,7 +297,7 @@
               console.log('generic click', settings);
               if( settings.polygon.selector == "product"){
                 // Go to the product URL
-                var link = 'https://amplience02-tech-prtnr-na03-dw.demandware.net/s/RefArchGlobal/amp-product-link/' + settings.polygon.target + '.html';
+                var link = 'https://{SFCC_DOMAIN}/s/{SFCC_SITE}/amp-product-link/' + settings.polygon.target + '.html';
                 window.open(link,"_self");
               } else{
                 // just go to the URL
@@ -318,7 +318,7 @@
               console.log('yay, i was clicked :)', settings);
               if( settings.hotspot.selector == "product"){
                 // Go to the product URL
-                var link = 'https://amplience02-tech-prtnr-na03-dw.demandware.net/s/RefArchGlobal/amp-product-link/' + settings.hotspot.target + '.html';
+                var link = 'https://{SFCC_DOMAIN}/s/{SFCC_SITE}/amp-product-link/' + settings.hotspot.target + '.html';
                 window.open(link,"_self");
               } else {
                 window.open(settings.hotspot.target,"_self");

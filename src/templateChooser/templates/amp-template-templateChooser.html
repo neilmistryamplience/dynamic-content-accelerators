@@ -1,33 +1,20 @@
 <!-- end old HBS -->
 {{#if (test this._meta.schema (toRegex ".*/text.json")) ~}} {{> amp-template-text }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/video.json")) ~}} {{> amp-template-video }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/video-yuca.json")) ~}} {{> amp-template-video-yuca }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/promo.json")) ~}} {{> amp-template-promo }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/promo-list.json")) ~}} {{> amp-template-promo-list }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/promolist")) ~}} <!-- ToRemove --> {{> acc-template-promoList }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/split-block.json")) ~}} {{> amp-template-split-block }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/splitblock")) ~}} <!-- ToRemove --> {{> acc-template-splitBlock }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/slider.json")) ~}} {{> amp-template-slider }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/image.json")) ~}} {{> amp-template-image this}} {{~/if}}
 {{#if (test this.[0]._meta.schema (toRegex ".*/image.json")) ~}} {{> amp-template-image this.[0]}} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/external-block.json")) ~}} {{> amp-template-external-block }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/externalblock")) ~}} <!-- ToRemove --> {{> acc-template-externalBlock }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/card-list.json")) ~}} {{> amp-template-card-list }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/cardlist")) ~}} <!-- ToRemove -->  {{> acc-template-cardList }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/card.json")) ~}} {{> amp-template-card }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/blog-post.json")) ~}} {{> amp-template-blog-post }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/blogPost")) ~}} <!-- ToRemove --> {{> acc-template-blogPost }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/banner.json")) ~}}
-    {{#if (test this._meta.schema (toRegex "https://www.amplience.com/examples/banner.json")) ~}}
-        {{> acc-template-banner }}
-    {{else}}
-        {{> amp-template-banner }} 
-    {{~/if}}
-{{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/banner.json")) ~}} {{> amp-template-banner }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/page.json")) ~}} {{> amp-template-page }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/container.json")) ~}} {{> amp-template-page }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/rich-text.json")) ~}} {{> amp-template-rich-text }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/rich-text-editor")) ~}} <!-- ToRemove --> {{> amp-template-richtext }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/map.json")) ~}} {{> amp-template-map }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/map-search.json")) ~}} {{> amp-template-map-search }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/sfcc-product-search.json")) ~}} {{> amp-template-sfcc-product-search }} {{~/if}}
@@ -41,17 +28,15 @@
 {{#if (test this._meta.schema (toRegex ".*/collection.json")) ~}} {{> amp-template-collection }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/collection-block.json")) ~}} {{> amp-template-collection-block }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/blog-list.json")) ~}} {{> amp-template-blog-list }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/curated-product-list.json")) ~}} {{> amp-template-curated-product-list }} {{~/if}}
-{{#if (test this._meta.schema (toRegex ".*/productlist.json")) ~}} {{> amp-template-productlist }} {{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/sfcc-curated-products.json")) ~}} {{> amp-template-sfcc-curated-products }} {{~/if}}
 <!-- SFCC Slots -->
-
 {{#if (test this._meta.schema (toRegex ".*/sfcc-slot-accelerators")) ~}} {{> sfcc-contentWrapper }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/sfcc-contentasset-flexible.json")) ~}} {{> amp-template-templateChooser this.content-asset-body }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/sfcc-contentasset-flexible-localised.json")) ~}} {{> amp-template-templateChooser this.content-asset-body }} {{~/if}}
-{{#if (test this.[@type] (toRegex ".*/sfcc-slot-flexible.json")) ~}}{{> amp-template-templateChooser this.content }}{{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/sfcc-slot-flexible.json")) ~}}{{> amp-template-templateChooser this.content }}{{~/if}}
 
-{{#if (test this.[@type] (toRegex ".*/sfcc-slot-flexible-localised.json")) ~}}{{> amp-template-templateChooser this.content }}{{~/if}}
-{{#if (test this.[@type] (toRegex ".*/sfcc-slot-flexible-localized.json")) ~}}{{> amp-template-templateChooser-eastpak this.content }}{{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/sfcc-slot-flexible-localised.json")) ~}}{{> amp-template-templateChooser this.content }}{{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/sfcc-slot-flexible-localized.json")) ~}}{{> amp-template-templateChooser-eastpak this.content }}{{~/if}}
 <!-- External Slots -->
 {{#if (test this._meta.schema (toRegex ".*/slot.json")) ~}}
     {{#each this.content}} {{> amp-template-templateChooser this }} {{/each}}

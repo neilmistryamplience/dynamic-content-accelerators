@@ -1,0 +1,22 @@
+{
+    "contentTypeUri": "{CONTENT_TYPE_BASEPATH}/sfcc-product-list.json",
+    "settings": {
+      "label": "SFCC Product List (CC)",
+      "visualizations": [
+        {VISUALIZATIONS}
+      ],
+      "icons": [
+        {
+          "size": 256,
+          "url": "https://i1.adis.ws/i/willow/icon_CTicon-style2-CuratedGrid"
+        }
+      ],
+      "cards": [
+        {
+          "templatedUri": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-cardsPreview&locale={{locales}},en-*,*"
+        }
+      ]
+    },
+    "repositories": {CONTENT_REPOSITORIES}
+  }
+  

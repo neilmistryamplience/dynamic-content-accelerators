@@ -21,7 +21,7 @@
       ]
     },
     "header": {
-      "title":"Header",
+      "title": "Header",
       "description": "Text for a header",
       "type": "object",
       "allOf": [
@@ -31,7 +31,7 @@
       ]
     },
     "subheader": {
-      "title":"Sub Header",
+      "title": "Sub Header",
       "description": "Text for a sub header",
       "type": "object",
       "allOf": [
@@ -41,7 +41,7 @@
       ]
     },
     "description": {
-      "title":"Description",
+      "title": "Description",
       "description": "Text for a Description",
       "type": "object",
       "allOf": [
