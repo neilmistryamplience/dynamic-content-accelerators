@@ -8,6 +8,10 @@
 }
 
 .amp-dc-blog-list {
+  text-align: center;
+  .o-dc-button{
+    margin-top: 1em;
+  }
   .amp-dc-blog-list-wrap {
     display: grid;
     grid-template-columns: repeat(3, minmax(0px, 1fr));
@@ -34,6 +38,9 @@
         line-height: 1.875rem;
         margin-top: 0;
         margin-bottom: 12px;
+      }
+      .o-dc-button{
+        margin-top: 1em;
       }
     }
   }

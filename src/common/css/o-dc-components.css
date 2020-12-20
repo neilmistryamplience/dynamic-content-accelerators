@@ -8709,7 +8709,12 @@ ul.compo-module-items a:not(.o-dc-button):hover {
 
 .o-dc-card a {
     display: block;
-    text-decoration: none
+    text-decoration: none !important;
+}
+
+.o-dc-card.a:hover {
+    display: block;
+    text-decoration: none !important;
 }
 
 .o-dc-card.card-bg {
