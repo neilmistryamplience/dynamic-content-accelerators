@@ -1,5 +1,5 @@
 <div class="amp-dc-card">
-    {{#if link}}
+    {{#if button.buttonLink}}
     <a class="amp-dc-card-wrap" href="{{link.value}}">
     {{else}}
     <div class="amp-dc-card-wrap">
@@ -12,30 +12,22 @@
         <div class="amp-dc-card-text-wrap
         {{#unless cardName}}
             {{#unless description}}
-                {{#unless link}}
+                {{#unless button.buttonLink}}
                         amp-dc-hide
                  {{/unless}}
             {{/unless}}
         {{/unless}}">
 
         {{#with cardName}}
-        {{> amp-template-advanced-textline this tag='h1' class='headline1'}}
-    {{/with}}
-    {{#with description}}
-        {{> amp-template-advanced-textline this tag='p' class='copy'}}
-    {{/with}}
-            {{#if link}}
-            <div class="amp-dc-card-link">
-                {{#if link.label}}
-                {{link.label}}
-                {{else}}
-                >>
-                {{/if}}
-            </div>
-            {{/if}}
+            {{> amp-template-advanced-textline this tag='h1' class='headline1'}}
+        {{/with}}
+        {{#with description}}
+            {{> amp-template-advanced-textline this tag='p' class='copy'}}
+        {{/with}}
+        {{> amp-template-button-wrap this}}
         </div>
 
-        {{#if link}}
+        {{#if button.buttonLink}}
         </a>
         {{else}}
     </div>
