@@ -25,16 +25,24 @@
       "title": "Card image"
     },
     "cardName": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 150,
-      "title": "Card name"
+      "title": "Card name",
+      "description": "The Card Name",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+        }
+      ]
     },
     "description": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 200,
-      "title": "Description"
+      "title": "Description",
+      "description": "The Card Description",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+        }
+      ]
     },
     "button": {
       "title": "Button",

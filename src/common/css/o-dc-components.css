@@ -10701,3 +10701,8 @@ ul.compo-module-items a:not(.o-dc-button):hover {
     -webkit-animation-name: bounce;
     animation-name: bounce
 }
+
+
+.product-detail .attributes .swatch-circle{
+    background-size: contain;
+}
