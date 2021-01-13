@@ -1,7 +1,7 @@
 .amp-dc-blog {
     overflow: hidden;
-    margin: 40px auto;
-    max-width: 980px;
+    margin: 0 auto;
+    max-width: 1400px;
     padding: 0 20px;
 
     .amp-dc-block-wrap {
@@ -15,10 +15,22 @@
 
     .amp-dc-blog-content {
         margin-top: 20px;
+        max-width: 900px;
+        margin:auto;
     }
 }
 
 .amp-dc-snippet {
+    
+
+    .amp-dc-snippet-overlay{
+        max-width: 1050px;
+        padding: 40px 120px;
+        background: #fff;
+        margin: -170px auto 0;
+        position: relative;
+    }
+
     .amp-dc-image {
         position: relative;
         overflow: hidden;

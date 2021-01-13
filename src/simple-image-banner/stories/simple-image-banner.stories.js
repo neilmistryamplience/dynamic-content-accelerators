@@ -14,22 +14,57 @@ import bannerStyles from '../css/simple-image-banner.scss';
 export const sampleContent = {
   "content": {
     "_meta": {
-      "name": "Simple Image Banner - CC",
+      "name": "wk36 - home staying in lockdown - simple banner",
       "schema": "https://amplience.com/composablecommerce/simple-image-banner.json",
-      "deliveryId": "a5255324-16ab-473f-8fed-6afae734995e"
+      "deliveryId": "2ac601bd-3be1-4174-a170-8dcbfaa0e365"
     },
     "bannerImage": {
+      "image": {
+        "image": {
+          "_meta": {
+            "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+          },
+          "id": "372afec9-b063-49f5-b6b4-49f8649e6c3d",
+          "name": "wk36-slide-home-staying-in-desktop",
+          "endpoint": "dem",
+          "defaultHost": "1qsp9jqe0mztt1m86vvc1muff6.staging.bigcontent.io"
+        }
+      },
       "gifImage": false,
+      "mobileImage": {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        },
+        "id": "79e9e718-4225-4b9f-83e8-d38ac74ca400",
+        "name": "wk36-slide-home-staying-in-mobile",
+        "endpoint": "dem",
+        "defaultHost": "1qsp9jqe0mztt1m86vvc1muff6.staging.bigcontent.io"
+      },
       "component": "SimpleImage",
-      "imageref": "https://www.bodyandfit.com/medias/UK-hp-banner-desktop-full-1920x670-UT50-off.png?context=bWFzdGVyfHJvb3R8NTQ2MTk1fGltYWdlL3BuZ3xoNGQvaDgzLzk1Njc4NjQwMjkyMTQucG5nfDRlNzY4MzRjMWY3YzRlNzljOThkZjcwMTY1MzU4M2ExNDM2NzZiMmI5ZmFiMzU1MTllMDgyMWY5OTUxMjgwYzI",
-      "mobileimageref": "https://www.bodyandfit.com/medias/UK-hp-banner-mobile-480x632-UT50-off.png?context=bWFzdGVyfHJvb3R8MTIzNTQwfGltYWdlL3BuZ3xoYWYvaGQxLzk1Njc4NjQxNjAyODYucG5nfGQ5M2IwMGViY2UxZmVhZWMyYmMzN2JmMmE1ODExMjdlZDAwNThkNjM2NWFkMjE3MDM3Y2JjZDA1NmRiMjU3NTA",
       "_meta": {
         "schema": "https://amplience.com/composablecommerce/simple-image.json"
       }
     },
-    "component": "SimpleImageBanner",
-    "link": "https://www.bodyandfit.com/en-gb/en-gb/c/back-to-your-best?hpbanner",
-    "analytics": "hpbanner"
+    "linkcol":"#cbe6e8",
+    "links": [
+      {
+        "label": "Work from home",
+        "value": "https://www.currys.co.uk/gbuk/workspace-1773-commercial.html"
+      },
+      {
+        "label": "Study from home",
+        "value": "https://www.currys.co.uk/gbuk/workspace-1773-commercial.html#tab-2"
+      },
+      {
+        "label": "Stay entertained",
+        "value": "https://www.currys.co.uk/gbuk/workspace-1773-commercial.html#tab-3"
+      },
+      {
+        "label": "Gaming",
+        "value": "https://www.currys.co.uk/gbuk/workspace-1773-commercial.html#tab-4"
+      }
+    ],
+    "component": "SimpleImageBanner"
   }
 };
 

@@ -24,7 +24,7 @@
         "description": "Link for the button",
         "type": "string",
         "minLength": 0,
-        "maxLength": 100
+        "maxLength": 2000
       },
       "buttonStyle": {
         "title": "Button Style",

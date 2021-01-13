@@ -24,12 +24,24 @@
       ],
       "title": "Banner image"
     },
-    "link": {
-      "title": "Link",
-      "type": "string",
-      "description": "Link for this banner",
-      "minLength": 0,
-      "maxLength": 2000
+    "linkcol": {
+      "title": "Link Colour",
+      "description": "The background colour for the links",
+      "format": "color",
+      "type": "string"
+    },
+    "links": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/link"
+          }
+        ]
+      }
     },
     "analytics": {
       "title": "Analytics Label",
@@ -41,7 +53,8 @@
   },
   "propertyOrder": [
     "bannerImage",
-    "link",
+    "linkcol",
+    "links",
     "analytics",
     "component"
   ]

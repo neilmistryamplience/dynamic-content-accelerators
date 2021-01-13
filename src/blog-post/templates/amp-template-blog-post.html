@@ -1,0 +1,14 @@
+
+<div class="amp-dc-blog js_dc_blog">
+    {{#with snippet}}
+        {{> amp-template-snippet this}}
+    {{/with}}
+    <div class="amp-dc-blog-content">
+        <div class="amp-dc-block-wrap">
+            {{> amp-template-rich-text content}}
+        </div>
+        {{#each content}}
+        <div class="amp-dc-block-wrap">{{> amp-template-templateChooser this}}</div>
+        {{/each}}
+    </div>
+</div>

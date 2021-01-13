@@ -1,14 +1,14 @@
 {
-    "contentTypeUri": "{CONTENT_TYPE_BASEPATH}/sfcc-product-list.json",
+    "contentTypeUri": "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
     "settings": {
-      "label": "SFCC Product List (CC)",
+      "label": "SFCC Product Search (CC)",
       "visualizations": [
         {VISUALIZATIONS}
       ],
       "icons": [
         {
           "size": 256,
-          "url": "https://i1.adis.ws/i/willow/icon_CTicon-style2-CuratedGrid"
+          "url": "https://bigcontent.io/cms/icons/experience-management/exp-commerce.png"
         }
       ],
       "cards": [

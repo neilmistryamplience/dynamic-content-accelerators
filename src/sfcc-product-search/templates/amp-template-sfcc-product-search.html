@@ -1,0 +1,17 @@
+<div class="amp-dc-product-list-search">
+    {{#if header}}
+    <h1 class="o-dc-text-headline1  text-align-center" style="margin:0 auto; width:100%; text-align:center">
+        {{ header }}
+    </h1>
+    {{/if}}
+    {{#if description}}
+    <p class="o-dc-text-copy  text-align-center" style="margin:0 auto; width:100%; text-align:center">
+        {{ description }}
+    </p>
+    {{/if}}
+    <div class="amp-dc-product-list">
+        <div class="grid-x grid-padding-x o-dc-card-list o-dc-card2-slider" role="toolbar" data-amp-sfcc-product-search data-amp-product-search-query="{{query}}" data-amp-product-search-numItems="{{numItems}}" data-amp-product-search-category="{{category}}" data-amp-product-search-sortby="{{sorting}}">
+            Loading...
+        </div>
+    </div>
+</div>

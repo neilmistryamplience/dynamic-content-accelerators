@@ -3,9 +3,24 @@
   overflow: hidden;
   white-space: nowrap;
 
-  * {
-    margin: 0;
-    padding: 0;
+  .amp-dc-link-holder{
+    //display:flex;
+    margin: auto;
+    width:100%;
+    .amp-dc-link-container{
+      display:flex;
+      margin:auto;
+      width:fit-content;
+      flex-wrap: wrap;
+      .o-dc-button{
+        margin: 1rem;
+        @media screen and (max-width: 768px) {
+          margin: 0.4rem auto 0.4rem auto;
+        }
+        
+      }
+    }
+    
   }
 
   .amp-dc-banner-pic-wrap{

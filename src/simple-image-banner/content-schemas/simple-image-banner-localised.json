@@ -36,12 +36,24 @@
          }
       }
     },
-    "link": {
-      "title": "Link",
-      "description": "Link for this banner",
-      "allOf": [
-        { "$ref": "http://bigcontent.io/cms/schema/v1/localization#/definitions/localized-string" }
-      ]
+    "linkcol": {
+      "title": "Link Colour",
+      "description": "The background colour for the links",
+      "format": "color",
+      "type": "string"
+    },
+    "links": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/link"
+          }
+        ]
+      }
     },
     "analytics": {
       "title": "Analytics Label",
@@ -53,7 +65,8 @@
   },
   "propertyOrder": [
     "bannerImage",
-    "link",
+    "linkcol",
+    "links",
     "analytics",
     "component"
   ]

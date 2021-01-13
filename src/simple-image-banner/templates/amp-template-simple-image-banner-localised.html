@@ -1,7 +1,14 @@
-<div class="amp-dc-simple-banner amp-dc-card js_dc_banner">
-    <a href="{{link}}" data-analytics="{{analytics}}">
+<div class="amp-dc-simple-banner js_dc_banner">
+    <!--<a href="{{link}}" data-analytics="{{analytics}}"> -->
         <div class="amp-dc-banner-pic-wrap">
             {{> amp-template-simple-image bannerImage}}
         </div>
-    </a>
+        <div class="amp-dc-link-holder" style="{{#if linkcol}}background-color:{{linkcol}}{{/if}}">
+            <div class="amp-dc-link-container">
+            {{#each links}}
+                <div class="o-dc-button white">{{label}}</div>
+            {{/each}}
+            </div>
+        </div>
+    <!--</a> -->
 </div>

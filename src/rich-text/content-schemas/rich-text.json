@@ -38,6 +38,7 @@
                 "{CONTENT_TYPE_BASEPATH}/map.json",
                 "{CONTENT_TYPE_BASEPATH}/navigation.json",
                 "{CONTENT_TYPE_BASEPATH}/productlist.json",
+                "{CONTENT_TYPE_BASEPATH}/promo-list.json",
                 "{CONTENT_TYPE_BASEPATH}/rich-text.json",
                 "{CONTENT_TYPE_BASEPATH}/sfcc-curated-products.json",
                 "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",

@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
+  "title": "SFCC Product Search",
+  "description": "SFCC Product Search",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+		"header": {
+			"title": "Header",
+			"description": "Header for this product list (Optional)",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255
+		},
+		"description": {
+			"title": "Description",
+			"description": "Description for this product list (Optional)",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 1000
+		},
+		"query": {
+			"title": "Query",
+			"description": "The search term",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50
+		},
+		"numItems": {
+			"title": "Number of items ",
+			"description": "Maximum number of items to return (defaults to 25)",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 100
+		},
+		"category": {
+			"title": "Category",
+			"description": "A category to filter by",
+			"type": "string",
+			"enum": [
+				"newarrivals",
+				"womens",
+				"womens-clothing",
+				"womens-jewelry",
+				"womens-accessories",
+				"mens",
+				"mens-clothing",
+				"mens-accessories"
+			]
+		},
+		"sorting": {
+			"title": "Sort By",
+			"description": "Pick on option to sort by",
+			"type": "string",
+			"enum": [
+				"best-matches",
+				"price-low-to-high",
+				"price-high-to-low",
+				"product-name-ascending",
+				"product-name-descending",
+				"brand",
+				"most-popular",
+				"mens-accessories",
+				"top-sellers"
+			]
+		}
+		
+	},
+	"propertyOrder": []
+}

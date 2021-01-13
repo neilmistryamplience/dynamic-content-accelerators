@@ -1,0 +1,5 @@
+{
+    "body": "../content-schemas/sfcc-product-search.json",
+    "schemaId": "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
+    "validationLevel": "CONTENT_TYPE"
+  }
