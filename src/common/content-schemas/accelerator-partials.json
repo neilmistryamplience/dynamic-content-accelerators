@@ -163,6 +163,60 @@
           "maxLength": 500,
           "title": "Description"
         },
+        "category": {
+          "type": "array",
+          "title": "Category",
+          "description": "The name of the category this relates too",
+          "items": {
+            "type": "string",
+            "enum": [
+              "women",
+              "men",
+              "beauty",
+              "lighting",
+              "furniture",
+              "electricals",
+              "inspiration"
+            ]
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "title": "Keywords",
+          "description": "Keywords",
+          "validation": "",
+          "items": {
+            "type": "string",
+            "title": "label",
+            "description": "keyword",
+            "validation": "keyword",
+            "minLength": 0,
+            "maxLength": 500
+          },
+          "minItems": 0,
+          "maxItems": 50
+        },
+        "author": {
+          "type": "string",
+          "title": "Author",
+          "description": "The author of the post",
+          "enum": [
+            "Hazel Nutkins",
+            "Macadamia Smith",
+            "Sally Almond",
+            "Desmond Cobnut",
+            "Jose Pistachio"
+          ]
+        },
+        "blogdate": {
+          "type": "string",
+          "title": "Creation Date",
+          "description": "Enter date (yyyy/mm/dd) that blog is created",
+          "validation": "YYYY/MM/DD",
+          "format": "text",
+          "minLength": 0,
+          "maxLength": 10
+        },
         "cta": {
           "type": "object",
           "allOf": [
