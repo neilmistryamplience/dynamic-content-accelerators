@@ -29,11 +29,11 @@
     videoThumbnail.name}}?w=1440&sm=aspect&aspect=16:9&qlt=80{{else}}{{amplienceVideo.defaultHost}}/v/{{amplienceVideo.endpoint}}/{{amplienceVideo.name}}{{/if}}')"
     {{#if videoAutoPlay}}autoplay="1"{{/if}} {{#unless
     hidePlayButton}}controls="true"{{/unless}}
-    src="//media.kipling.com/v/{{amplienceVideo.endpoint}}/{{amplienceVideo.name}}/mp4_720p?protocol=https"
+    src="//{{amplienceVideo.defaultHost}}/v/{{amplienceVideo.endpoint}}/{{amplienceVideo.name}}/mp4_720p?protocol=https"
     > {{/if}}
 
     <source
-      src="//{{amplienceVideo.defaultHost}}/v/{{amplienceVideo.endpoint}}/{{amplienceVideo.name}}mp4_720p?protocol=https"
+      src="//{{amplienceVideo.defaultHost}}/v/{{amplienceVideo.endpoint}}/{{amplienceVideo.name}}/mp4_720p?protocol=https"
       data-res="High"
       data-bitrate="2119"
       label="High"

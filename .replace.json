@@ -1,6 +1,6 @@
 {
   "BASEPATH": "https://amplience.com/composablecommerce",
-  "COMPANY_TAG": "nmdemo",
+  "COMPANY_TAG": "modanisapoc",
   "VISUALIZATIONS": [
     {
       "label": "Visualization",
@@ -8,13 +8,8 @@
       "default": true
     },
     {
-      "label": "JSON (CDV2)",
+      "label": "JSON",
       "templatedUri": "https://presalesadisws.s3.eu-west-1.amazonaws.com/dynamic-content/dc-visualization-content-delivery/index.html?vse={{vse.domain}}&id={{content.sys.id}}&format=inlined&depth=all&v2=true&locale={{locales}}",
-      "default": false
-    },
-    {
-      "label": "JSON (CDV1)",
-      "templatedUri": "https://presalesadisws.s3.eu-west-1.amazonaws.com/dynamic-content/dc-visualization-content-delivery/index.html?vse={{vse.domain}}&id={{content.sys.id}}&format=inlined&depth=all&v2=false&locale={{locales}}",
       "default": false
     }
   ]

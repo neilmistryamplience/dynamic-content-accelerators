@@ -93,15 +93,20 @@
       "title": "Vertical text position - mobile",
       "description": "Select a position"
     },
-    "button": {
+    "links": {
+      "type": "array",
       "title": "Button",
       "description": "Add a button",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
-        }
-      ]
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
+          }
+        ]
+      }
     },
     "backgroundGradient": {
       "title": "Background gradient",
