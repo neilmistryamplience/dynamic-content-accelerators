@@ -7312,7 +7312,7 @@ ul.compo-module-items a:not(.o-dc-button):hover {
     max-width: calc(60% - 1rem);
     left: 1rem;
     white-space: normal;
-    background: 0 0!important;
+    //background: 0 0!important;
     padding: 5px 0
 }
 
