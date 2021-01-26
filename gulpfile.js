@@ -203,8 +203,8 @@ gulp.task('build-css', function () {
   return gulp
     .src([
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
-      'src/**/css/*.scss',
       'src/**/css/*.css',
+      'src/**/css/*.scss',
       '!src/cardsPreview/css/cardsPreview.scss',
       '!src/cardsPreview/css/localCardsStyles.scss',
     ])

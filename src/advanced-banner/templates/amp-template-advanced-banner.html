@@ -76,9 +76,9 @@
         {{#with description}}
             {{> amp-template-advanced-textline this tag='p' class='copy'}}
         {{/with}}
-        {{#if button.buttonLabel}}
+        {{#with button}}
             {{> amp-template-button-wrap this}}
-        {{/if}}
+        {{/with}}
     
         </div>
         {{/if}}

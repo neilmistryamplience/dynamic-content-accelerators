@@ -24,13 +24,24 @@
       ],
       "title": "Banner image"
     },
+    "positionalLink": {
+      "title": "Positional Link",
+      "description": "A link that is positional for mobile and desktop",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/positionalLink"
+        }
+      ]
+    },
     "linkcol": {
-      "title": "Link Colour",
+      "title": "Link BG Colour",
       "description": "The background colour for the links",
       "format": "color",
       "type": "string"
     },
     "links": {
+      "title":"Global footer links",
       "type": "array",
       "minItems": 0,
       "maxItems": 4,

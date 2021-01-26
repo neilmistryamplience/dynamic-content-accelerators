@@ -28,6 +28,7 @@
     left: 0;
     z-index: 2;
 
+
     &.o-dc-banner-info-grad-text-left:before, &.o-dc-banner-info-grad:before {
       content: "";
       background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
@@ -84,6 +85,17 @@
     white-space: normal;
     background: 0 0 !important;
     padding: 5px 0;
+
+    .o-dc-text-flashing{
+      animation: blinker 1s linear infinite;
+    }
+    
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
 
     &.o-dc-banner-text-middle-left {
       top: auto;

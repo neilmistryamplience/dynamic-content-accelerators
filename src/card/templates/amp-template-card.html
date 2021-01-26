@@ -24,7 +24,9 @@
         {{#with description}}
             {{> amp-template-advanced-textline this tag='p' class='copy'}}
         {{/with}}
-        {{> amp-template-button-wrap this}}
+        {{#with button}}
+            {{> amp-template-button-wrap this}}
+        {{/with}}
         </div>
 
         {{#if button.buttonLink}}

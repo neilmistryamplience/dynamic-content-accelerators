@@ -71,6 +71,7 @@
       "description": "Is the image an Animated gif?",
       "type": "boolean"
     }
+
   },
   "propertyOrder": [
     "image",

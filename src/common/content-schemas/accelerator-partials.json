@@ -24,7 +24,48 @@
           "title": "Style",
           "description": "Specify a style (defaults to black)",
           "type": "string",
-          "enum": ["black", "white"]
+          "enum": ["black", "white", "flashing"]
+        },
+        "fontColor": {
+          "title": "(Optional) - Choose a font colour",
+          "type": "string",
+          "format": "color"
+        },
+        "fontSize": {
+          "title": "Font Size",
+          "description": "Specify a font size",
+          "type": "string",
+          "enum": ["small", "medium", "large"]
+        },
+        "fontWeight": {
+          "title": "Font Weight",
+          "description": "Specify a font weight",
+          "type": "string",
+          "enum": ["normal", "bold"]
+        }
+      }
+    },
+    "advancedCounter": {
+      "type": "object",
+      "properties": {
+        "counter": {
+          "title": "Counter",
+          "description": "A counter to an end date / time",
+          "type": "string",
+          "format": "date-time",
+          "minLength": 0,
+          "maxLength": 50,
+          "examples": ["2020-12-15T00:00:00Z", "2021-01-05T06:44:03Z"],
+          "$comment": "A string property with the date format stored in UTC",
+          "ui:extension": {
+            "name": "date-picker"
+          }
+        },
+        "style": {
+          "title": "Style",
+          "description": "Specify a style (defaults to black)",
+          "type": "string",
+          "enum": ["black", "white", "flashing"]
         },
         "fontColor": {
           "title": "(Optional) - Choose a font colour",
@@ -133,6 +174,63 @@
           "title": "Value",
           "pattern": "^(http://www.|https://www.|http://|https://)?[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(:[0-9]{1,5})?(/.*)?$",
           "description": "Enter an absolute URL"
+        }
+      }
+    },
+    "position": {
+      "type": "object",
+      "properties": {
+        "posX": {
+          "title": "Horizontal Position",
+          "description": "Horizontal percentage",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "posY": {
+          "title": "Vertical Position",
+          "description": "Verical percentage",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+
+    "positionalLink": {
+      "title": "Positional Button",
+      "description": "Button which can be positioned",
+      "type": "object",
+      "properties": {
+        "button": {
+          "title": "Button",
+          "description": "Add a button",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
+            }
+          ]
+        },
+        "posd": {
+          "title": "Desktop position",
+          "description": "Desktop position percentages",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/position"
+            }
+          ]
+        },
+        "posm": {
+          "title": "Mobile position",
+          "description": "Mobile position percentages",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/position"
+            }
+          ]
         }
       }
     },

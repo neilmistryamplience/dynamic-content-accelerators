@@ -108,6 +108,94 @@ export const sampleWithAmplienceImages = {
   }
 }
 
+export const sampleContentPositional = {
+  "content": {
+    "_meta": {
+      "name": "Simple Image Banner (CC) - Beauty",
+      "schema": "https://amplience.com/composablecommerce/simple-image-banner.json",
+      "deliveryId": "494a25b2-514a-4ecf-92af-dfa16aeca247"
+    },
+    "bannerImage": {
+      "image": {
+        "image": {
+          "_meta": {
+            "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+          },
+          "id": "2fe7b86f-55cc-4c2a-b378-ad0a952e56db",
+          "name": "070121_boohoobeauty_hero_desktop",
+          "endpoint": "dem",
+          "defaultHost": "1qsp9jqe0mztt1m86vvc1muff6.staging.bigcontent.io"
+        }
+      },
+      "gifImage": false,
+      "mobileImage": {
+        "_meta": {
+          "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        },
+        "id": "55ac8380-f709-4cdc-bf48-719cc23a8ca7",
+        "name": "070121_boohoobeauty_hero_mobile",
+        "endpoint": "dem",
+        "defaultHost": "1qsp9jqe0mztt1m86vvc1muff6.staging.bigcontent.io"
+      },
+      "component": "SimpleImage",
+      "_meta": {
+        "schema": "https://amplience.com/composablecommerce/simple-image.json"
+      },
+      "button": {
+        "button": {
+          "buttonLabel": "Positional Button Desktop",
+          "_meta": {
+            "schema": "https://amplience.com/composablecommerce/advanced-button.json"
+          }
+        },
+        "buttonPosX": 10,
+        "buttonPosY": 10
+      },
+      "mobileButton": {
+        "button": {
+          "buttonLabel": "Positional Button Mobile",
+          "buttonLink": "#",
+          "_meta": {
+            "schema": "https://amplience.com/composablecommerce/advanced-button.json"
+          }
+        }
+      }
+    },
+    "links": [
+      {
+        "label": "Global Link 1"
+      },
+      {
+        "label": "Global Link 2"
+      },
+      {
+        "label": "Global Link 3"
+      },
+      {
+        "label": "Global Link 4"
+      }
+    ],
+    "positionalLink": {
+      "button": {
+        "buttonLabel": "Positional Button Example",
+        "buttonLink": "#",
+        "_meta": {
+          "schema": "https://amplience.com/composablecommerce/advanced-button.json"
+        }
+      },
+      "posd": {
+        "posX": 20,
+        "posY": 30
+      },
+      "posm": {
+        "posX": 10,
+        "posY": 60
+      }
+    },
+    "component": "SimpleImageBanner"
+  }
+}
+
 export const sampleLocalisedNL = {
   "content": {
     "_meta": {
@@ -151,4 +239,6 @@ export const sampleLocalisedNL = {
 storiesOf('Simple Image Banner', module)
   .add('Simple Image Banner', () => renderContent('amp-template-simple-image-banner', sampleContent.content))
   .add('Simple Image Banner Amplience', () => renderContent('amp-template-simple-image-banner', sampleWithAmplienceImages.content))
-  .add('Simple Image Banner Localised NL', () => renderContent('amp-template-simple-image-banner', sampleLocalisedNL.content));
+  .add('Simple Image Banner Localised NL', () => renderContent('amp-template-simple-image-banner', sampleLocalisedNL.content))
+  .add('Simple Image Banner Positional', () => renderContent('amp-template-simple-image-banner', sampleContentPositional.content));
+  sampleContentPositional

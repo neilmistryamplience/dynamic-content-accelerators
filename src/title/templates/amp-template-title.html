@@ -5,8 +5,8 @@
     {{#with description}}
         {{> amp-template-advanced-textline this tag='p' class='copy'}}
     {{/with}}
-    {{#if button.buttonLabel}}
+    {{#with button}}
         {{> amp-template-button-wrap this}}
-    {{/if}}
+    {{/with}}
     <!--{{#if button}}<a href="{{button.buttonLink}}" class="o-dc-button {{button.buttonStyle}} {{#if button.buttonFontWeight}}o-dc-text-{{button.buttonFontWeight}}{{/if}} {{button.buttonTransition}}{{#if button.buttonBackgroundColour}} inline-color {{/if}}" style="{{#if button.buttonBackgroundColour}}background:{{button.buttonBackgroundColour}};{{/if}}{{#if button.buttonForegroundColour}} color:{{button.buttonForegroundColour}};{{/if}}">{{button.buttonLabel}}{{#is button.buttonTransition 'hvr-icon-forward'}} <i class="kiplingicon-chevron-right hvr-icon"></i>{{/is}}{{#is button.buttonTransition 'hvr-icon-fade'}} <i class="kiplingicon-check hvr-icon"></i>{{/is}}</a>{{/if}} -->
 </div>
