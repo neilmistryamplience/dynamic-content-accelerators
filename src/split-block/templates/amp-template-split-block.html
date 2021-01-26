@@ -22,6 +22,9 @@
             {{#if (test this.[@type] (toRegex ".*/simple-image-banner.json")) ~}}
             {{> amp-template-simple-image-banner }}
             {{~/if}}
+            {{#if (test this.[@type] (toRegex ".*/title.json")) ~}}
+            {{> amp-template-title }}
+            {{~/if}}
 
         </div>
     </div>

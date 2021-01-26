@@ -318,7 +318,8 @@
               console.log('yay, i was clicked :)', settings);
               if( settings.hotspot.selector == "product"){
                 // Go to the product URL
-                var link = 'https://{SFCC_DOMAIN}/s/{SFCC_SITE}/amp-product-link/' + settings.hotspot.target + '.html';
+                var link = 'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/amp-product-link/' + settings.hotspot.target + '.html';
+                //var link = 'https://{SFCC_DOMAIN}/s/{SFCC_SITE}/amp-product-link/' + settings.hotspot.target + '.html';
                 window.open(link,"_self");
               } else {
                 window.open(settings.hotspot.target,"_self");

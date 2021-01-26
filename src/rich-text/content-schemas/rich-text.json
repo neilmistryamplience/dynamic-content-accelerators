@@ -50,7 +50,7 @@
               ],
               "contentTypeSettings": {
                 "cards": {
-                  "*": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-cardsPreview&locale={{locales}},en-*,*"
+                  "*": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-cardsPreview&locale=en-*,*"
                 }
               }
             }
