@@ -36,6 +36,28 @@
          }
       }
     },
+    "positionalLink":{  
+      "allOf":[  
+         {  
+            "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+         }
+      ],
+      "properties":{  
+         "values":{  
+            "items":{  
+               "properties":{  
+                  "value":{  
+                     "allOf":[  
+                        {  
+                           "$ref":"{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/positionalLink"
+                        }
+                     ]
+                  }
+               }
+            }
+         }
+      }
+    },
     "linkcol": {
       "title": "Link Colour",
       "description": "The background colour for the links",

@@ -2,6 +2,14 @@
     <!--<a href="{{link}}" data-analytics="{{analytics}}"> -->
         <div class="amp-dc-banner-pic-wrap">
             {{> amp-template-simple-image bannerImage}}
+            {{#with positionalLink}}
+                <!--<div style="width:100%;height:100%;background-color: grey;"> -->
+                <!-- draw button twice-->
+                {{> amp-template-positional-button position=posd class="amp-dc-desktop"}}
+                {{> amp-template-positional-button position=posm class="amp-dc-mobile"}}
+                </div>
+            {{/with}}
+            
         </div>
         <div class="amp-dc-link-holder" style="{{#if linkcol}}background-color:{{linkcol}}{{/if}}">
             <div class="amp-dc-link-container">

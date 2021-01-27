@@ -50,6 +50,16 @@
         }
       ]
     },
+    "countdown": {
+      "title": "Countdown Timer",
+      "description": "A countdown timer",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedCounter"
+        }
+      ]
+    },
     "disclaimer": {
       "type": "string",
       "minLength": 0,
@@ -146,6 +156,7 @@
     "header",
     "subheader",
     "description",
+    "countdown",
     "hideMobileText",
     "button",
     "textPositionHorizontal",

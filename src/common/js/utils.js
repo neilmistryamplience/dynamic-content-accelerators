@@ -297,7 +297,7 @@
               console.log('generic click', settings);
               if( settings.polygon.selector == "product"){
                 // Go to the product URL
-                var link = 'https://{SFCC_DOMAIN}/s/{SFCC_SITE}/amp-product-link/' + settings.polygon.target + '.html';
+                var link = 'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/amp-product-link/' + settings.polygon.target + '.html';
                 window.open(link,"_self");
               } else{
                 // just go to the URL
