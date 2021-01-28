@@ -1,0 +1,22 @@
+{
+    "contentTypeUri": "{CONTENT_TYPE_BASEPATH}/sfcc-content-search.json",
+    "settings": {
+      "label": "SFCC content Search (CC)",
+      "visualizations": [
+        {VISUALIZATIONS}
+      ],
+      "icons": [
+        {
+          "size": 256,
+          "url": "https://bigcontent.io/cms/icons/experience-management/exp-catergory.png"
+        }
+      ],
+      "cards": [
+        {
+          "templatedUri": "https://{{vse.domain}}/v1/content/demo/content-item/{{content.sys.id}}?template=amp-template-cardsPreview&locale={{locales}},en-*,*"
+        }
+      ]
+    },
+    "repositories": {CONTENT_REPOSITORIES}
+  }
+  

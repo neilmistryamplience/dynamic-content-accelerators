@@ -346,6 +346,7 @@
         "{CONTENT_TYPE_BASEPATH}/rich-text.json",
         "{CONTENT_TYPE_BASEPATH}/sfcc-curated-products.json",
         "{CONTENT_TYPE_BASEPATH}/sfcc-product-search.json",
+        "{CONTENT_TYPE_BASEPATH}/sfcc-content-search.json",
         "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
         "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
         "{CONTENT_TYPE_BASEPATH}/slider.json",

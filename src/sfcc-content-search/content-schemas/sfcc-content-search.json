@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "{CONTENT_TYPE_BASEPATH}/sfcc-content-search.json",
+  "title": "SFCC Content Search",
+  "description": "SFCC Content Search",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "header": {
+      "title": "Header",
+      "description": "Header for this product list (Optional)",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255
+    },
+    "description": {
+      "title": "Description",
+      "description": "Description for this product list (Optional)",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 1000
+    },
+    "query": {
+      "title": "Query",
+      "description": "The search term",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 50
+    },
+    "numItems": {
+      "title": "Number of items ",
+      "description": "Maximum number of items to return (defaults to 25)",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "category": {
+      "title": "Category",
+      "description": "A category to filter by",
+      "type": "string",
+      "enum": [
+		"mens-blog",
+		"womens-blog",
+		"shoes-blog",
+		"suits-blog",
+		"dresses-blog",
+		"blog",
+		"blog-archives"
+	]
+    }
+  },
+  "propertyOrder": []
+}

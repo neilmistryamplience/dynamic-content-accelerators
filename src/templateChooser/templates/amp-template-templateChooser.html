@@ -18,6 +18,7 @@
 {{#if (test this._meta.schema (toRegex ".*/map.json")) ~}} {{> amp-template-map }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/map-search.json")) ~}} {{> amp-template-map-search }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/sfcc-product-search.json")) ~}} {{> amp-template-sfcc-product-search }} {{~/if}}
+{{#if (test this._meta.schema (toRegex ".*/sfcc-content-search.json")) ~}} {{> amp-template-sfcc-content-search }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/form.json")) ~}} {{> amp-template-form }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/advanced-banner.json")) ~}} {{> amp-template-advanced-banner }} {{~/if}}
 {{#if (test this._meta.schema (toRegex ".*/advanced-banner-localised.json")) ~}} {{> amp-template-advanced-banner }} {{~/if}}
