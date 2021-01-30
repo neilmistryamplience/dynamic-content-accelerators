@@ -7,11 +7,14 @@
                 {{#if (test this.[@type] (toRegex ".*/simple-image-banner.json")) ~}}
                     {{> amp-template-simple-image-banner }}
                 {{~/if}}
+                {{#if (test this.[@type] (toRegex ".*/simple-image-banner-localised.json")) ~}}
+                    {{> amp-template-simple-image-banner }}
+                {{~/if}}
                 {{#if (test this.[@type] (toRegex ".*/advanced-banner.json")) ~}}
                     {{> amp-template-advanced-banner }}
                 {{~/if}}
-                {{#if (test this.[@type] (toRegex ".*/countdown-banner.json")) ~}}
-                    {{> amp-template-countdown-banner }}
+                {{#if (test this.[@type] (toRegex ".*/advanced-banner-localised.json")) ~}}
+                    {{> amp-template-advanced-banner }}
                 {{~/if}}
                 {{#if (test this.[@type] (toRegex ".*/banner")) ~}}
                 {{> amp-template-banner }}

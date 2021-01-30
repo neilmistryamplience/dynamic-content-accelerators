@@ -298,6 +298,9 @@ textarea {
 #segments{
     margin: 0.5rem;
 }
+#locales{
+    margin: 0.5rem;
+}
 
 .lead {
     font-size: 125%;

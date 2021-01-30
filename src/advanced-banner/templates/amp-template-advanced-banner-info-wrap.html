@@ -9,8 +9,17 @@
         {{#with description}}
             {{> amp-template-advanced-textline this tag='p' class='copy'}}
         {{/with}}
+        {{#with countdown}}
+            {{> amp-template-advanced-textline this tag='h1' class='headline2' customClass='counter' counter=counter}}
+        {{/with}}
         {{#each links}}
             {{> amp-template-button-wrap this index=@index}}
         {{/each}}
+        <!--
+            {{#if headerloc}}<h1 class="o-dc-text-headline1 {{#if headerFontSize}}o-dc-text-headline1-{{headerFontSize}}{{/if}} {{#if headerFontWeight}}o-dc-text-{{headerFontWeight}}{{/if}} {{#if headerStyle}}o-dc-text-{{headerStyle}}{{/if}}" {{#if headerFontColour}}style="color:{{headerFontColour}}"{{/if}}>{{{headerloc}}}</h1>{{/if}}
+            {{#if subheader}}<h2 class="o-dc-text-headline2 {{#if subheaderFontSize}}o-dc-text-headline2-{{subheaderFontSize}}{{/if}} {{#if subheaderFontWeight}}o-dc-text-{{subheaderFontWeight}}{{/if}} {{#if subheaderStyle}}o-dc-text-{{subheaderStyle}}{{/if}}" {{#if subheaderFontColour}}style="color:{{subheaderFontColour}}"{{/if}}>{{{subheader}}}</h2>{{/if}}
+            {{#if description}}<p class="o-dc-text-copy {{#if descriptionFontSize}}o-dc-text-copy-{{descriptionFontSize}}{{/if}} {{#if descriptionFontWeight}}o-dc-text-{{descriptionFontWeight}}{{/if}} {{#if descriptionStyle}}o-dc-text-{{descriptionStyle}}{{/if}} {{#if hideMobileText}}show-for-medium{{/if}}"
+            {{#if descriptionFontColour}}style="color:{{descriptionFontColour}}"{{/if}}>{{description}}</p>{{/if}}
+        -->    
     </div>
  </div> 

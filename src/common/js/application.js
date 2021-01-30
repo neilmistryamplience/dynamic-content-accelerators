@@ -19,7 +19,7 @@
     if (sDefault) return sDefault;
   };
 
-  var vse = getUrlParameter('vse', 'visiondirect.cdn.content.amplience.net');
+  var vse = getUrlParameter('vse', 'modanisapoc.cdn.content.amplience.net');
   var crsvse = getUrlParameter('vse', 'c1-orig.adis.ws');
   // Removed as we will get this from the DIV attributes
   /*
@@ -69,16 +69,55 @@
 
   function drawDebug(){
     loadDynamicSlots();
+
+    var debugContainer = document.getElementById('amp-debug-container');
+    debugContainer.innerHTML = "";
+
+    var localesString = '';
+    localesString += '<option value="en-TR">en-TR</option>';
+    localesString += '<option value="tr-TR">tr-TR</option>';
+    localesString += '<option value="en-AE">en-AE</option>';
+    localesString += '<option value="tr-AE">tr-AE</option>';
+    localesString += '<option value="ar-AE">ar-AE</option>';
+    debugContainer.innerHTML += '<select name="locales" id="locales">' + localesString + '</select>';
+
+    console.log(document.getElementById('locales'))
+    document.getElementById('locales').addEventListener("change", function(change){
+      console.log(change.target.value);
+      var newLocale = change.target.value + ',en-*,*';
+
+      var currenturl = window.location.href;
+      if (currenturl.indexOf('&locale=') >= 0) {
+        var urlarr = currenturl.split('&');
+        for (var i = 0; i < urlarr.length; i++) {
+          var line = urlarr[i];
+          if (line.indexOf('locale=') == 0) {
+            urlarr[i] = 'locale=' + newLocale;
+          }
+        }
+        var newurl = urlarr.join('&');
+        window.open(newurl, '_self');
+      } else {
+        if (currenturl.indexOf('?') >= 0) {
+          window.open(currenturl + '&locale=' + newLocale, '_self');
+        } else {
+          window.open(currenturl + '?locale=' + newLocale, '_self');
+        }
+      }
+
+    });
+
+
     if(timestamp){
       console.log("Timestamp:" + timestamp)
       var displayDate = new Date(Number(timestamp))
       console.log(displayDate)
-      var debugContainer = document.getElementById('amp-debug-container');
+      
       if( debugContainer){
-        debugContainer.innerHTML = '<span>Currently Viewing: ' + displayDate + '</span>';
+        //debugContainer.innerHTML += '<span>Currently Viewing: ' + displayDate + '</span>';
       }
 
-      $.ajax({
+      /*$.ajax({
         url:
         'https://presalesadisws.s3.eu-west-1.amazonaws.com/ui-extensions/data-extension/segments.json',
         method: 'GET',
@@ -100,7 +139,12 @@
             
           }
 
-          debugContainer.innerHTML += '<select name="segments" id="segments">' + optionsString + '</select>'
+          
+
+
+          debugContainer.innerHTML += '<select name="segments" id="segments">' + optionsString + '</select>';
+
+          
 
           document.getElementById('segments').addEventListener("change", function(change){
             console.log(change.target.value);
@@ -132,7 +176,7 @@
           console.log('error');
           console.log(jqXHR, textStatus, errorThrown);
         }
-      });
+      });*/
     }
   }
 

@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/advanced-banner-localised.json",
+  "schemaId": "{CONTENT_TYPE_BASEPATH}/advanced-banner-localised.json",
+  "validationLevel": "CONTENT_TYPE"
+}

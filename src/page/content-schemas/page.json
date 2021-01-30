@@ -30,7 +30,6 @@
                   "{CONTENT_TYPE_BASEPATH}/simple-image-banner.json",
                   "{CONTENT_TYPE_BASEPATH}/simple-image-banner-localised.json",
                   "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
-                  "{CONTENT_TYPE_BASEPATH}/countdown-banner.json",
                   "{CONTENT_TYPE_BASEPATH}/collection-block.json",
                   "{CONTENT_TYPE_BASEPATH}/collection.json",
                   "{CONTENT_TYPE_BASEPATH}/blog-list.json",

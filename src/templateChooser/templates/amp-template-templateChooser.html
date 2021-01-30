@@ -65,10 +65,10 @@
 {{#if (test this.[@type] (toRegex ".*/advanced-banner.json")) ~}}
 {{> amp-template-advanced-banner }}
 {{~/if}}
-
-{{#if (test this.[@type] (toRegex ".*/countdown-banner.json")) ~}}
-{{> amp-template-countdown-banner }}
+{{#if (test this.[@type] (toRegex ".*/advanced-banner-localised.json")) ~}}
+{{> amp-template-advanced-banner }}
 {{~/if}}
+
 
 {{#if (test this.[@type] (toRegex ".*/curated-product-list.json")) ~}}
 {{> amp-template-curated-product-list }}

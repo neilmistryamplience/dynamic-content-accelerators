@@ -1,8 +1,9 @@
+
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "{CONTENT_TYPE_BASEPATH}/countdown-banner.json",
-  "title": "Countdown Banner",
-  "description": "Banner accelerator",
+  "$id": "{CONTENT_TYPE_BASEPATH}/advanced-banner-localised.json",
+  "title": "Advanced Banner Localised",
+  "description": "Banner accelerator Localised",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -36,7 +37,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedTextLocalised"
         }
       ]
     },
@@ -46,22 +47,19 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedTextLocalised"
         }
       ]
     },
-    "counter": {
-      "title": "Counter",
-      "description": "A counter to an end date / time",
-      "type": "string",
-      "format": "date-time",
-      "minLength": 0,
-      "maxLength": 50,
-      "examples": ["2020-12-15T00:00:00Z", "2021-01-05T06:44:03Z"],
-      "$comment": "A string property with the date format stored in UTC",
-      "ui:extension": {
-        "name": "date-picker"
-      }
+    "countdown": {
+      "title": "Countdown Timer",
+      "description": "A countdown timer",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedCounter"
+        }
+      ]
     },
     "disclaimer": {
       "type": "string",
@@ -106,15 +104,20 @@
       "title": "Vertical text position - mobile",
       "description": "Select a position"
     },
-    "button": {
+    "links": {
+      "type": "array",
       "title": "Button",
       "description": "Add a button",
-      "type": "object",
-      "allOf": [
-        {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
-        }
-      ]
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "allOf": [
+          {
+            "$ref": "{CONTENT_TYPE_BASEPATH}/advanced-button.json"
+          }
+        ]
+      }
     },
     "backgroundGradient": {
       "title": "Background gradient",
@@ -159,8 +162,9 @@
     "header",
     "subheader",
     "description",
+    "countdown",
     "hideMobileText",
-    "button",
+    "links",
     "textPositionHorizontal",
     "textPositionVertical",
     "backgroundGradient",

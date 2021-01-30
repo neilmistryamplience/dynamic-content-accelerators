@@ -38,7 +38,7 @@
           "enum": ["small", "medium", "large"]
         },
         "fontWeight": {
-          "title": "Subheader Font Weight",
+          "title": "Font Weight",
           "description": "Specify a font weight",
           "type": "string",
           "enum": ["normal", "bold"]
@@ -79,6 +79,47 @@
         },
         "fontWeight": {
           "title": "Subheader Font Weight",
+          "description": "Specify a font weight",
+          "type": "string",
+          "enum": ["normal", "bold"]
+        }
+      }
+    },
+    "advancedCounter": {
+      "type": "object",
+      "properties": {
+        "counter": {
+          "title": "Counter",
+          "description": "A counter to an end date / time",
+          "type": "string",
+          "format": "date-time",
+          "minLength": 0,
+          "maxLength": 50,
+          "examples": ["2020-12-15T00:00:00Z", "2021-01-05T06:44:03Z"],
+          "$comment": "A string property with the date format stored in UTC",
+          "ui:extension": {
+            "name": "date-picker"
+          }
+        },
+        "style": {
+          "title": "Style",
+          "description": "Specify a style (defaults to black)",
+          "type": "string",
+          "enum": ["black", "white", "flashing"]
+        },
+        "fontColor": {
+          "title": "(Optional) - Choose a font colour",
+          "type": "string",
+          "format": "color"
+        },
+        "fontSize": {
+          "title": "Font Size",
+          "description": "Specify a font size",
+          "type": "string",
+          "enum": ["small", "medium", "large"]
+        },
+        "fontWeight": {
+          "title": "Font Weight",
           "description": "Specify a font weight",
           "type": "string",
           "enum": ["normal", "bold"]

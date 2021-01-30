@@ -1,3 +1,4 @@
+
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "{CONTENT_TYPE_BASEPATH}/advanced-banner.json",
@@ -21,17 +22,17 @@
       ]
     },
     "header": {
-      "title":"Header",
+      "title": "Header",
       "description": "Text for a header",
       "type": "object",
       "allOf": [
         {
-          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedTextLocalised"
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
         }
       ]
     },
     "subheader": {
-      "title":"Sub Header",
+      "title": "Sub Header",
       "description": "Text for a sub header",
       "type": "object",
       "allOf": [
@@ -41,12 +42,22 @@
       ]
     },
     "description": {
-      "title":"Description",
+      "title": "Description",
       "description": "Text for a Description",
       "type": "object",
       "allOf": [
         {
           "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedText"
+        }
+      ]
+    },
+    "countdown": {
+      "title": "Countdown Timer",
+      "description": "A countdown timer",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "{CONTENT_TYPE_BASEPATH}/accelerator-partials.json#/definitions/advancedCounter"
         }
       ]
     },
@@ -151,8 +162,9 @@
     "header",
     "subheader",
     "description",
+    "countdown",
     "hideMobileText",
-    "button",
+    "links",
     "textPositionHorizontal",
     "textPositionVertical",
     "backgroundGradient",
