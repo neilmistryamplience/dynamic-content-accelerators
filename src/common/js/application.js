@@ -28,6 +28,7 @@
   */
   var mainContentKey = getUrlParameter('key', '');
   var locale = getUrlParameter('locale', 'en-GB,en-*,*');
+  if(locale.length <1) locale = 'en-GB,en-*,*'
   var cid = getUrlParameter('cid');
   var timestamp = getUrlParameter('timestamp');
   var segmentParam = getUrlParameter('segment');

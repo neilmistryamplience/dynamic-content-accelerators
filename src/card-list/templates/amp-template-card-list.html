@@ -6,6 +6,12 @@
     </div>
 
     <div class="amp-dc-card-list-wrap">
-        {{#each cards}}{{> amp-template-templateChooser this}}{{/each}}
+        {{#each cards}}
+            {{#if (test this.[@type] (toRegex ".*/card.json")) ~}}
+                {{> amp-template-card }}
+            {{else}}
+            <div class="amp-dc-card">{{> amp-template-templateChooser }}</div>
+            {{~/if}}
+        {{/each}}
     </div>
 </div>

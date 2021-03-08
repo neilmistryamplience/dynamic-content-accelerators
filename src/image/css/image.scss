@@ -25,7 +25,9 @@
     user-select: none;
   }
 }
-
+.amp-dc-image-pic-wrap-hotspots{
+  position:relative;
+}
 .amp-dc-image-pic-wrap {
   [data-type="poi-hotspot"] {
     cursor: pointer;
