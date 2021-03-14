@@ -14,7 +14,7 @@
       var folder = searchdom.getAttribute('data-amp-content-search-folder');
 
       var req =
-        'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/dw/shop/v20_4/content_search?';
+        '{SFCC_URL}/s/{SFCC_SITEID}/dw/shop/{SFCC_OCAPI_VERSION}/content_search?';
       if (query) req += '&q=' + query;
       if (numItems) req += '&count=' + numItems;
       if (folder) req += '&refine=fdid=' + folder;
@@ -22,7 +22,7 @@
       $.ajax({
         url:
           req +
-          '&client_id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+          '&client_id={SFCC_FE_CLIENTID}',
         context: searchdom,
         success: function (data) {
           console.log(data);
@@ -38,7 +38,7 @@
 
 
               var link =
-                'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/' +
+              '{SFCC_URL}/s/{SFCC_SITEID}/' + 
                 item.id +
                 '.html?lang=default';
               var image = $(htmlSource).find('.amp-dc-snippet .amp-dc-image img').attr('src')
@@ -77,11 +77,11 @@
       console.log('Found a product to load');
       var productCode = item.getAttribute('data-amp-sfcc-product-code');
         $.ajax({
-            url: 'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/dw/shop/v20_4/products/' + productCode + '?client_id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&expand=prices,images,availability,variations',
+            url: '{SFCC_URL}/s/{SFCC_SITEID}/dw/shop/{SFCC_OCAPI_VERSION}/products/' + productCode + '?client_id={SFCC_FE_CLIENTID}&expand=prices,images,availability,variations',
             context: item,
             success: function(data) {
                 var image = data.image_groups.find(x => x.view_type === 'large').images[0].link;
-                var link = 'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/amp-product-link/' + data.id + '.html';
+                var link = '{SFCC_URL}/s/{SFCC_SITEID}/amp-product-link/' + data.id + '.html';
                 var name = data.name;
                 var price = '&pound;' + data.price;
                 
@@ -114,44 +114,18 @@
       var sortby = searchdom.getAttribute('data-amp-product-search-sortby'); 
 
       var req =
-        'https://zzfr-002.sandbox.us01.dx.commercecloud.salesforce.com/s/RefArchGlobal/dw/shop/v20_4/product_search?';
+        '{SFCC_URL}/s/{SFCC_SITEID}/dw/shop/{SFCC_OCAPI_VERSION}/product_search?';
       if (query) req += '&q=' + query;
       if (numItems) req += '&count=' + numItems;
       if (category) req += '&refine_1=cgid=' + category;
       if (sortby) req += '&sort=' + sortby;
 
-      /**if( testSearch && testSearch.hits){
-          var htmlToAdd = "";
-        testSearch.hits.forEach(
-            function(item){
-                console.log(item)
-
-
-                var link = 'https://amplience02-tech-prtnr-na03-dw.demandware.net/s/RefArchGlobal/amplience-product-link/' + item.product_id + '.html?lang=default'; //item.link;
-                var image = item.image.link;
-                var name = item.product_name;
-                var price = '&pound;' + item.price;
-
-
-                var html =
-              '<div class="cell medium-6 large-3 o-dc-card2-slider-item" ><a class="o-dc-card card-bg  card2" href="' +
-              link +
-              '"><div class="amp-dc-card-wrap"><div class="o-dc-card-img"><picture class="amp-dc-image"><img loading="lazy" src="' +
-              image +
-              '?$product-list$" class="amp-dc-image-pic"/></picture></div><div class="o-dc-card-text"><h4 class="o-dc-card-title">' +
-              name +
-              '</h4><p class="o-dc-card-copy extra-padding-bottom">'+
-              price +'</p><div class="cell large-shrink"><div class="o-dc-button small">Shop Now</div></div></div></div></a></div>';
-              htmlToAdd += html;
-            }
-        )
-        searchdom.innerHTML = htmlToAdd
-      }*/
+      
 
       $.ajax({
         url:
           req +
-          '&client_id=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&expand=prices,images,availability,variations',
+          '&client_id={SFCC_FE_CLIENTID}&expand=prices,images,availability,variations',
         context: searchdom,
         success: function (data) {
           console.log(data);
@@ -161,7 +135,7 @@
               console.log(item);
 
               var link =
-                'https://amplience02-tech-prtnr-na03-dw.demandware.net/s/RefArchGlobal/amplience-product-link/' +
+                '{SFCC_URL}/s/{SFCC_SITEID}/amplience-product-link/' +
                 item.product_id +
                 '.html?lang=default';
               var image = item.image.link;

@@ -144,11 +144,9 @@ gulp.task('deploy-extensions-dc', function (cb) {
           request.patch(
             {
               url:
-                config.amplience["dynamic-content"]['api-url'] +
-                '/hubs/' +
-                config.amplience["dynamic-content"]['dc-hub-id'] +
-                '/extensions/' +
-                match['id'],
+              config.amplience["dynamic-content"]['api-url'] 
+              + '/extensions/' +
+             match['id'],
 
               headers: {
                 'Content-Type': 'application/json',

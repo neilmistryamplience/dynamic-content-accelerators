@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://www.amplience.com/examples/sfcc-slot-flexible-localised.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://www.amplience.com/examples/sfcc-slot-flexible-localised.json",
   "title": "SFCC Localised Slot",
   "description": "SFCC Localised Slot",
   "allOf": [
@@ -26,16 +26,19 @@
       "type": "object",
       "properties": {
         "sfcc_slot": {
-          "$ref": "https://localhost.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc-slot.json#"
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_slot"
         },
         "sfcc_category_slot": {
-          "$ref": "https://localhost.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc-category-slot.json#"
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_category_slot"
+        },
+        "sfcc_folder_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_folder_slot"
         },
         "sfcc_site": {
-          "$ref": "https://localhost.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc-site.json#"
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_site"
         }
       },
-      "propertyOrder": ["sfcc_site", "sfcc_slot", "sfcc_category_slot"]
+      "propertyOrder": ["sfcc_site", "sfcc_slot", "sfcc_folder_slot", "sfcc_category_slot"]
     },
     "content": {
       "allOf": [

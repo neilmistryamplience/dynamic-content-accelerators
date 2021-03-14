@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://www.amplience.com/examples/sfcc-slot-flexible.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://www.amplience.com/examples/sfcc-slot-flexible.json",
   "title": "SFCC - Flexible Slot",
   "description": "SFCC - Flexible Slot",
   "allOf": [

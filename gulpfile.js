@@ -49,6 +49,18 @@ var replace = function () {
     fileContent = fileContent.replace(/\{CT_SCOPE\}/g, config.commercetools.scope);
     fileContent = fileContent.replace(/\{CT_LOCALE\}/g, config.commercetools.locale);
 
+    // SFCC
+    fileContent = fileContent.replace(/\{SFCC_PROXY_URL\}/g, config.sfcc.proxyUrl);
+    fileContent = fileContent.replace(/\{SFCC_URL\}/g, config.sfcc.sfccurl);
+    fileContent = fileContent.replace(/\{SFCC_SECRET\}/g, config.sfcc.authSecret);
+    fileContent = fileContent.replace(/\{SFCC_CLIENTID\}/g, config.sfcc.authClientId);
+    fileContent = fileContent.replace(/\{SFCC_SITEID\}/g, config.sfcc.siteID);
+    fileContent = fileContent.replace(/\{SFCC_OCAPI_VERSION\}/g, config.sfcc.ocapiVersion);
+    fileContent = fileContent.replace(/\{SFCC_FE_CLIENTID\}/g, config.sfcc.feClientID);
+
+
+
+
     file.contents = new Buffer.from(fileContent);
     // send the updated file down the pipe
     cb(null, file);

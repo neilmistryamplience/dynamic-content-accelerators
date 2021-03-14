@@ -1,0 +1,18 @@
+{
+    "id" : null,
+    "hubId" : null,
+    "name" : "date-picker",
+    "label" : "Date Picker",
+    "description" : "Enables easy selection of date and time",
+    "url" : "https://presalesadisws.s3.eu-west-1.amazonaws.com/ui-extensions/date-picker/index.html",
+    "height" : 200,
+    "category" : "CONTENT_FIELD",
+    "parameters" : "{}",
+    "snippets":[
+        {
+           "label":"Date Picker",
+           "body":"{\n      \"type\": \"object\",\n      \"properties\": {\n        \"counter\": {\n          \"title\": \"Counter\",\n          \"description\": \"A counter to an end date / time\",\n          \"type\": \"string\",\n          \"format\": \"date-time\",\n          \"minLength\": 0,\n          \"maxLength\": 50,\n          \"examples\": [\"2020-12-15T00:00:00Z\", \"2021-01-05T06:44:03Z\"],\n          \"$comment\": \"A string property with the date format stored in UTC\",\n          \"ui:extension\": {\n            \"name\": \"date-picker\"\n          }\n        },\n        \"style\": {\n          \"title\": \"Style\",\n          \"description\": \"Specify a style (defaults to black)\",\n          \"type\": \"string\",\n          \"enum\": [\"black\", \"white\", \"flashing\"]\n        },\n        \"fontColor\": {\n          \"title\": \"(Optional) - Choose a font colour\",\n          \"type\": \"string\",\n          \"format\": \"color\"\n        },\n        \"fontSize\": {\n          \"title\": \"Font Size\",\n          \"description\": \"Specify a font size\",\n          \"type\": \"string\",\n          \"enum\": [\"small\", \"medium\", \"large\"]\n        },\n        \"fontWeight\": {\n          \"title\": \"Font Weight\",\n          \"description\": \"Specify a font weight\",\n          \"type\": \"string\",\n          \"enum\": [\"normal\", \"bold\"]\n        }\n      }\n    }"
+        }
+     ],
+    "status" : "ACTIVE"
+  }

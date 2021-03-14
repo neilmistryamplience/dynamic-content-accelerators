@@ -1,0 +1,18 @@
+
+{
+    "id":null,
+    "hubId":null,
+    "url":"https://sfcc-extentsion-demo.adis.ws",
+    "name":"sfcc-product-selector",
+    "label":"SFCC Product Selector",
+    "height":208,
+    "category":"CONTENT_FIELD",
+    "snippets":[
+       {
+          "label":"Product Selector",
+          "body":"{\n  \"title\": \"Product Selector\",\n  \"description\": \"description\",\n  \"type\": \"array\",\n  \"minItems\": 1,\n  \"maxItems\": 30,\n  \"items\": {\n    \"type\": \"string\"\n  },\n  \"ui:extension\": {\n    \"name\": \"sfcc-product-selector\"\n  }\n}"
+       }
+    ],
+    "description":"Allows business users to manually select products",
+    "parameters":"{\n  \"proxyUrl\": \"{SFCC_PROXY_URL}\",\n  \"sfccUrl\": \"{SFCC_URL}\",\n  \"authSecret\": \"{SFCC_SECRET}\",\n  \"authClientId\": \"{SFCC_CLIENTID}\",\n  \"siteId\": \"{SFCC_SITEID}\",\n  \"backend\": \"SFCC\",\n  \"catalogs\": []\n}"
+ }

@@ -2,7 +2,7 @@
 {
     "id":null,
     "hubId":null,
-    "url":"https://presalesadisws.s3.eu-west-1.amazonaws.com/ui-extensions/ct-product-loader-extension/index.html",
+    "url":"https://amplience.github.io/dc-extension-map-ui/index.html",
     "name":"map",
     "label":"Map",
     "height":208,
@@ -14,5 +14,5 @@
        }
     ],
     "description":"Allows easy selection of locations on a map",
-    "parameters":"{\n      \"apiKey\": \"it8LjVPuiR5IAe9I2gIj9fk0\"    \n}"
+    "parameters":"{\n      \"apiKey\": \"AIzaSyCuS1s7Xj-it8LjVPuiR5IAe9I2gIj9fk0\"    \n}"
  }
